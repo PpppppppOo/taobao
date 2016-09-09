@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet"  href="./css/selector.css">
+		<link rel="stylesheet"  href="./lib/reset.css">
+		<link rel="stylesheet" href="./css/unslider-dots.css">
+		<link rel="stylesheet" href="./css/unslider.css">
+		<title></title>
+	</head>
+	<body>
+		<div class="navtop">
+			<ul class="first">
+				<li>首页</li>
+				<li class="meau"><div class="a">浏览项目</div>
+					<ul class="down">
+						<li><a><img src="./image/4.png">影音</a></li>
+						<li><a><img src="./image/5.png">公益</a></li>
+						<li><a><img src="./image/6.png">书籍</a></li>
+						<li><a><img src="./image/7.png">娱乐</a></li>
+						<li><a><img src="./image/8.png">科技</a></li>
+						<li><a><img src="./image/9.png">设计</a></li>
+						<li><a><img src="./image/10.png">动漫</a></li>
+						<li><a><img src="./image/11.png">游戏</a></li>
+						<li><a><img src="./image/12.png">农业</a></li>
+						<li><a><img src="./image/13.png">其他</a></li>
+					</ul>
+				</li>
+				<li>新手帮助</li>
+			</ul>
+			<ul class="second">
+				<li>发布项目</li>
+				<li>我的众筹</li>
+			</ul>
+		</div>
+		<div class="topback">
+			<div class="top">
+				<div class="banner">
+					<ul>
+						<li><img src="image/a1.jpg"></li>
+						<li><img src="image/a2.jpg"></li>
+						<li><img src="image/a3.jpg"></li>
+						<li><img src="image/a4.jpg"></li>
+					</ul>
+					</div>
+					<div class="topa">
+					</div>
+					<div class="topb">
+					</div>
+				
+			</div>	
+			 <div class="clearfloat"></div>
+			<div class="rightNav">
+				<div class="nav1"></div>
+				<div class="nav2"></div>
+				<div class="nav3"></div>
+				<div class="nav4"></div>
+			</div>
+		</div>
+		<div class="textshow">
+			<ul>
+				<li>累计筹款金额<br>
+					<span>206834万</span>
+				</li>
+				<li><div class="line"></div></li>
+				<li>
+					累计支持人数<br>
+					<span>2543.1万</span>
+				</li>
+				<li><div class="line"></div>
+				</li>
+				<li>
+					单项支持最高金额<br>
+					<span>3559万</span>
+				</li>
+				<li>
+				<div class="line"></div>
+				</li>
+				<li>
+					单项支持最高人数<br>
+					<span>34.8万</span>
+				</li>
+			</ul>
+		</div>
+		<div class="remen">
+			<h1>热门推荐</h1><br>
+			<span>大家都在看</span>
+			<a href="#">无人机</a>
+			<a href="#">VR</a>
+			<a href="#">机器人</a><br>
+			<div class="remenP">
+				<div class="remenP1"></div>
+				<div class="remenP2"></div>
+				<div class="remenP3"></div>
+				<div class="remenP4"></div>
+				<div class="remenP5"></div>
+			</div>
+		</div>
+		<div class="recommend">
+			<div class="title">
+			<div class="i"></div>
+			<p>类目精选</p>
+			<div class="i"></div>
+			</div>
+			<div class="titleNext"><label>潮品尖货，创造力聚集地</label></div>
+			<div class="floor1">
+				<span class="num">1F</span>
+				<span class="keji">科技</span>
+			</div>
+		</div>
+		<div class="ww"></div>
+		<script src="./lib/arttemplate@3.0.0.min.js"></script>
+		<script type="text/html" id="tmpl">
+			<%for(var i=0,dataLen=data.length;i<dataLen;i++){%>
+				<div class="case">
+				<a class="img" style="background-image: url(<%=data[i].image%>)"></a>
+					<p class="title"><%=data[i].name%></p>
+					<p class="label">
+					<%for(var j=0,len=data[i].label.length;j<len;j++){%>
+						<em><%=data[i].label[j]%></em>		
+					<%}%>
+					</p>
+					<P class="meter"></P>
+					<div class="count">
+						<div class="section">
+						<p class="value"><%=data[i].rate%>%</p>
+						<label class="title">达成率</label>
+						</div>
+						<div class="section">
+						<p class="value"><%=data[i].sum%></p>
+						<label class="title">以筹金额</label>
+						</div>
+						<div class="section">
+						<p class="value"><%=data[i].amount%></p>
+						<label class="title">支持人数</label>
+						</div>
+
+					</div>
+				
+				</div>
+			<%}%>
+		</script>
+
+
+
+
+
+
+		<script src="lib/jquery@2.2.4.js"></script>
+		<script src="./js/taobao.js"></script>
+		<script src="./lib/unslider-min.js"></script>
+		<script src="./lib/unslider.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".banner").unslider({
+				autoplay:true,
+				arrows : false,
+				fluid :true,
+				nav : true
+			});
+		});
+
+
+		</script>
+	</body>

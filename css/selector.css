@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navtop {
+  height: 35px;
+  width: 100%;
+  border-bottom: 3px solid #00ccce;
+}
+.navtop .first {
+  float: left;
+  position: absolute;
+  left: 25%;
+  top: 10px;
+}
+.navtop .first li {
+  list-style-type: none;
+  float: left;
+  width: 150px;
+  font-family: Microsoft Yahei;
+  text-align: center;
+  font-size: 13px;
+}
+.navtop .first li:hover ul {
+  display: block;
+}
+.navtop .first li .down {
+  position: absolute;
+  z-index: 50;
+  width: 148px;
+  display: none;
+  background-color: #fff;
+}
+.navtop .first li .down a {
+  display: inline-block;
+  width: 148px;
+  line-height: 40px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.navtop .first li .down a:hover {
+  background-color: #00ccce;
+  color: #fff;
+}
+.navtop .first li .down a img {
+  position: relative;
+  top: 5px;
+}
+.navtop .first li:nth-child(2) {
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+}
+.navtop .second {
+  float: left;
+  position: absolute;
+  left: 72%;
+  top: 10px;
+}
+.navtop .second li {
+  list-style-type: none;
+  float: left;
+  width: 150px;
+  font-family: Microsoft Yahei;
+  text-align: center;
+  font-size: 13px;
+}
+.navtop .second li:nth-child(2) {
+  border-left: 1px solid #e6e6e6;
+}
+.topback {
+  height: 540px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.topback .top {
+  height: 500px;
+  width: 900px;
+  margin: 0px auto;
+  padding-top: 10px;
+}
+.topback .top .unslider {
+  width: 540px;
+  float: left;
+}
+.topback .top .unslider nav {
+  position: relative;
+  bottom: 20px;
+  z-index: 2;
+}
+.topback .top .unslider nav li {
+  width: 10px;
+  height: 10px;
+}
+.topback .top .banner {
+  width: 540px;
+  height: 500px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.topback .top .banner ul li {
+  float: left;
+  list-style: none;
+}
+.topback .top .topa {
+  display: inline-block;
+  height: 250px;
+  width: 350px;
+  float: left;
+  background-image: url("../image/topa.png");
+  z-index: 2;
+}
+.topback .top .topb {
+  display: inline-block;
+  height: 250px;
+  width: 350px;
+  background-image: url("../image/topb.png");
+  float: left;
+  z-index: 2;
+}
+.clearfloat {
+  height: 0px;
+  width: 0px;
+  clear: both;
+}
+.rightNav {
+  width: 290px;
+  height: 660px;
+  position: relative;
+  left: 1400px;
+  bottom: 515px;
+  display: flew;
+  flex-direction: column;
+}
+.rightNav .nav1 {
+  width: 100%;
+  height: 80px;
+  background-image: url("../image/nav1.png");
+}
+.rightNav .nav2 {
+  width: 100%;
+  height: 195px;
+  background-image: url("../image/nav2.png");
+}
+.rightNav .nav3 {
+  width: 100%;
+  height: 195px;
+  background-image: url("../image/nav3.png");
+}
+.rightNav .nav4 {
+  width: 100%;
+  height: 195px;
+  background-image: url("../image/nav4.png");
+}
+.textshow {
+  height: 140px;
+  width: 100%;
+}
+.textshow ul {
+  padding-left: 25%;
+}
+.textshow ul li {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  padding: 40px 32px;
+  color: #999;
+  font-size: 12px;
+  font-family: Microsoft Yahei;
+}
+.textshow ul li span {
+  font-size: 25px;
+  padding-top: 15px;
+  color: #666;
+}
+.textshow ul .line {
+  width: 2px;
+  height: 63px;
+  background-color: #41d9db;
+}
+.remen {
+  width: 100%;
+  height: 636px;
+  background-image: url("../image/remen.png");
+  background-size: 100% 100%;
+}
+.remen h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+}
+.remen span {
+  text-align: center;
+  color: #fff;
+  padding-left: 42%;
+}
+.remen a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.remen a:hover {
+  background-color: #00ccce;
+  border: none;
+}
+.remen .remenP {
+  width: 1800px;
+  height: 450px;
+  padding-left: 20%;
+  padding-top: 20px;
+}
+.remen .remenP .remenP1 {
+  width: 220px;
+  height: 450px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 25px;
+  background-image: url("../image/remenP1.png");
+}
+.remen .remenP .remenP2 {
+  width: 220px;
+  height: 450px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 25px;
+  background-image: url("../image/remenP2.png");
+}
+.remen .remenP .remenP3 {
+  width: 220px;
+  height: 450px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 25px;
+  background-image: url("../image/remenP3.png");
+}
+.remen .remenP .remenP4 {
+  width: 220px;
+  height: 450px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 25px;
+  background-image: url("../image/remenP4.png");
+}
+.remen .remenP .remenP5 {
+  width: 220px;
+  height: 450px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 25px;
+  background-image: url("../image/remenP5.png");
+}
+.recommend .title {
+  padding-left: 20%;
+  margin-top: 50px;
+  width: 100%;
+  height: 40px;
+}
+.recommend .title p {
+  font-size: 27px;
+  font-weight: bold;
+  float: left;
+  padding: 0px 5px;
+}
+.recommend .title .i {
+  width: 530px;
+  height: 5px;
+  background-color: #c6c6c6;
+  float: left;
+  margin-top: 15px;
+}
+.recommend .titleNext {
+  width: 100%;
+}
+.recommend .titleNext label {
+  padding-left: 888px;
+  color: #a0a0a0;
+}
+.recommend .floor1 {
+  width: 1190px;
+  height: 20px;
+  margin-left: 20%;
+}
+.recommend .floor1 .num {
+  font-size: 14px;
+  font-family: Microsoft Yahei;
+}
+.recommend .floor1 .keji {
+  font-size: 20px;
+  font-family: Microsoft Yahei;
+}
+.recommend .kejiphoto ul {
+  height: 776px;
+  width: 1210px;
+  list-style-type: none;
+  padding-left: 20%;
+  padding-top: 20px;
+}
+.recommend .kejiphoto ul li:nth-child(1) {
+  position: relative;
+  right: 38px;
+}
+.recommend .kejiphoto ul li {
+  height: 372px;
+  width: 282px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.recommend .kejiphoto ul li .aaa {
+  display: block;
+  width: 280px;
+  height: 185px;
+  border: 1px solid #ededed;
+}
+.recommend .kejiphoto ul li .aaa p {
+  width: 250px;
+  height: 42px;
+  margin: 10px auto;
+  font-family: Microsoft Yahei;
+  font-size: 15px;
+}
+.recommend .kejiphoto ul li .aaa label {
+  position: relative;
+  left: 20px;
+  top: 10px;
+  background-color: #f0f0f0;
+  padding: 5px 5px;
+  font-size: 13px;
+  color: #808080;
+}
+.recommend .kejiphoto ul li .aaa hr {
+  display: block;
+  width: 252px;
+  height: 6px;
+  background-color: #00cccd;
+  margin-top: 35px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.recommend .kejiphoto ul li .aaa .a1 {
+  display: block;
+  height: 31px;
+  width: 58px;
+  text-align: center;
+  float: left;
+}
+.recommend .kejiphoto ul li .aaa .a2 {
+  display: block;
+  height: 31px;
+  width: 144px;
+  text-align: center;
+  float: left;
+}
+.recommend .kejiphoto ul li .aaa .a3 {
+  display: block;
+  height: 31px;
+  width: 77px;
+  text-align: center;
+  float: left;
+}
+.recommend .kejiphoto ul li .aaa .textem1 {
+  font-size: 14px;
+  font-family: Microsoft Yahei;
+  font-style: normal;
+}
+.recommend .kejiphoto ul li .aaa .textem2 {
+  font-size: 12px;
+  color: #999;
+  font-family: Microsoft Yahei;
+  font-style: normal;
+}
+.recommend .floor2 {
+  width: 1190px;
+  height: 20px;
+  margin-left: 20%;
+}
+.recommend .floor2 .num {
+  font-size: 14px;
+  font-family: Microsoft Yahei;
+}
+.recommend .floor2 .keji {
+  font-size: 20px;
+  font-family: Microsoft Yahei;
+}
+.ww {
+  margin: 0 auto;
+  width: 1210px;
+  position: relative;
+  left: 15px;
+  top: 6px;
+}
+.ww .case {
+  width: 280px;
+  height: 370px;
+  border: 1px solid #ededed;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+.ww .case .img {
+  display: inline-block;
+  width: 280px;
+  height: 184px;
+}
+.ww .case .title {
+  height: 50px;
+  width: 240px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: Microsoft Yahei;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  line-height: 23px;
+}
+.ww .case .label {
+  width: 240px;
+  margin: 0 auto;
+}
+.ww .case .label em {
+  display: inline-block;
+  padding: 6px 9px;
+  background-color: #f0f0f0;
+  color: #999;
+  margin-bottom: 23px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+.ww .case .meter {
+  width: 240px;
+  height: 5px;
+  margin: 0 auto;
+  background-color: #00cccd;
+  border-radius: 5px;
+}
+.ww .case .count {
+  width: 236px;
+  margin: 0 auto;
+}
+.ww .case .count .section {
+  display: inline-block;
+  text-align: center;
+  padding-top: 11px;
+  padding-right: 16px;
+}
+.ww .case .count .section .value {
+  font-size: 14px;
+}
+.ww .case .count .section .title {
+  font-size: 12px;
+  color: #999;
+}
