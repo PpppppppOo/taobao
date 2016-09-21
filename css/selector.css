@@ -6,11 +6,12 @@
   height: 35px;
   width: 100%;
   border-bottom: 3px solid #00ccce;
+  overflow: hidden;
 }
 .navtop .first {
   float: left;
   position: absolute;
-  left: 25%;
+  left: 10%;
   top: 10px;
 }
 .navtop .first li {
@@ -70,14 +71,16 @@
   height: 540px;
   width: 100%;
   background-color: #f2f2f2;
+  position: relative;
 }
 .topback .top {
   height: 500px;
-  width: 900px;
-  margin: 0px auto;
+  width: 1190px;
   padding-top: 10px;
+  margin: 0 auto;
 }
 .topback .top .unslider {
+  display: inline-block;
   width: 540px;
   float: left;
 }
@@ -115,7 +118,6 @@
   height: 250px;
   width: 350px;
   background-image: url("../image/topb.png");
-  float: left;
   z-index: 2;
 }
 .clearfloat {
@@ -124,13 +126,13 @@
   clear: both;
 }
 .rightNav {
+  display: inline-block;
   width: 290px;
   height: 660px;
-  position: relative;
-  left: 1400px;
-  bottom: 515px;
-  display: flew;
-  flex-direction: column;
+  position: absolute;
+  top: 10px;
+  right: 3%;
+  overflow: hidden;
 }
 .rightNav .nav1 {
   width: 100%;
@@ -155,9 +157,11 @@
 .textshow {
   height: 140px;
   width: 100%;
+  overflow: hidden;
 }
 .textshow ul {
-  padding-left: 25%;
+  position: relative;
+  left: 10%;
 }
 .textshow ul li {
   float: left;
@@ -167,6 +171,10 @@
   color: #999;
   font-size: 12px;
   font-family: Microsoft Yahei;
+}
+.textshow ul li p {
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 .textshow ul li span {
   font-size: 25px;
@@ -183,35 +191,48 @@
   height: 636px;
   background-image: url("../image/remen.png");
   background-size: 100% 100%;
+  overflow: hidden;
 }
 .remen h1 {
   text-align: center;
   color: #fff;
   padding-top: 20px;
+  padding-bottom: 20px;
+  width: 400px;
+  margin: 0 auto;
 }
-.remen span {
+.remen .weiyi {
+  margin: 0 auto;
+  height: 30px;
+  width: 400px;
+  text-align: center;
+}
+.remen .weiyi span {
   text-align: center;
   color: #fff;
-  padding-left: 42%;
 }
-.remen a {
+.remen .weiyi a {
   text-decoration: none;
   padding: 5px 10px;
   color: #fff;
   border-radius: 10px;
   border: 1px solid #fff;
 }
-.remen a:hover {
+.remen .weiyi a:hover {
   background-color: #00ccce;
   border: none;
 }
 .remen .remenP {
-  width: 1800px;
+  width: 1215px;
   height: 450px;
-  padding-left: 20%;
-  padding-top: 20px;
+  margin: 0 auto;
 }
-.remen .remenP .remenP1 {
+.remen .remenP ul {
+  overflow: hidden;
+  width: 1215px;
+  float: left;
+}
+.remen .remenP ul .remenP1 {
   width: 220px;
   height: 450px;
   float: left;
@@ -219,7 +240,7 @@
   margin-right: 25px;
   background-image: url("../image/remenP1.png");
 }
-.remen .remenP .remenP2 {
+.remen .remenP ul .remenP2 {
   width: 220px;
   height: 450px;
   float: left;
@@ -227,7 +248,7 @@
   margin-right: 25px;
   background-image: url("../image/remenP2.png");
 }
-.remen .remenP .remenP3 {
+.remen .remenP ul .remenP3 {
   width: 220px;
   height: 450px;
   float: left;
@@ -235,7 +256,7 @@
   margin-right: 25px;
   background-image: url("../image/remenP3.png");
 }
-.remen .remenP .remenP4 {
+.remen .remenP ul .remenP4 {
   width: 220px;
   height: 450px;
   float: left;
@@ -243,32 +264,30 @@
   margin-right: 25px;
   background-image: url("../image/remenP4.png");
 }
-.remen .remenP .remenP5 {
+.remen .remenP ul .remenP5 {
   width: 220px;
   height: 450px;
   float: left;
   margin-top: 10px;
-  margin-right: 25px;
   background-image: url("../image/remenP5.png");
 }
+.recommend {
+  overflow: hidden;
+}
 .recommend .title {
-  padding-left: 20%;
-  margin-top: 50px;
+  height: 80px;
   width: 100%;
-  height: 40px;
+}
+.recommend .title img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 63px;
 }
 .recommend .title p {
   font-size: 27px;
   font-weight: bold;
   float: left;
   padding: 0px 5px;
-}
-.recommend .title .i {
-  width: 530px;
-  height: 5px;
-  background-color: #c6c6c6;
-  float: left;
-  margin-top: 15px;
 }
 .recommend .titleNext {
   width: 100%;
@@ -417,12 +436,12 @@
   line-height: 23px;
 }
 .ww .case .label {
-  width: 240px;
+  width: 250px;
   margin: 0 auto;
 }
 .ww .case .label em {
   display: inline-block;
-  padding: 6px 9px;
+  padding: 6px 8px;
   background-color: #f0f0f0;
   color: #999;
   margin-bottom: 23px;
